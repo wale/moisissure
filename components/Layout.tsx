@@ -1,27 +1,33 @@
-import { Navbar, NavbarLink } from "./Navbar";
+import { Navbar, NavbarIcon, NavbarLink } from "./Navbar";
 
-export const Layout = ({children}: LayoutProps) => {
+export const Layout = ({ children }: LayoutProps) => {
     return (
         <main className="bg-base-dawn dark:bg-base">
-            <Navbar left={
-                <>
-                    <NavbarLink name="Blog" href="/blog" />
-                    <NavbarLink name="About" href="/about" />
-                    <NavbarLink name="Contact" href="/contact" />
-                </>
-            }
-            right={
-                <>
-                    <NavbarLink name="Blog" href="/blog" />
-                    <NavbarLink name="About" href="/about" />
-                    <NavbarLink name="Contact" href="/contact" />
-                </>
-            }/>
+            <Navbar
+                left={
+                    <>
+                        <NavbarLink name="Blog" href="/blog" />
+                        <NavbarLink name="About" href="/about" />
+                        <NavbarLink name="Contact" href="/contact" />
+                    </>
+                }
+                right={
+                    <>
+                        <NavbarIcon
+                            href="https://twitter.com/spellsaidwrong"
+                            icon={["fab", "twitter"]}
+                        />
+                        <NavbarIcon
+                            href="https://github.com/wale"
+                            icon={["fab", "github"]}
+                        />
+                    </>
+                }
+            />
             {children}
         </main>
-    )
-}
-
+    );
+};
 
 interface LayoutProps {
     children: React.ReactNode;
