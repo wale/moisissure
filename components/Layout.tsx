@@ -21,6 +21,10 @@ export const Layout = ({ children }: LayoutProps) => {
                             href="https://github.com/wale"
                             icon={["fab", "github"]}
                         />
+                        <NavbarIcon
+                            href="https://unsplash.com/@spellsaidwrong"
+                            icon={["fab", "unsplash"]}
+                        />
                     </>
                 }
             />
