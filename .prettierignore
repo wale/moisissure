@@ -1,0 +1,14 @@
+# Ignore vscode config
+.vscode/
+
+# Ignore all .config.js files (PostCSS, Tailwind, the like)
+*.config.js
+
+# Ignore the .yarn folder
+yarn/
+
+# Ignore JSON files
+*.json
+
+# Ignore CSS
+*.css
