@@ -28,7 +28,7 @@ export class LinkButton<P extends LinkChild> extends React.Component<P> {
     }
 }
 
-export class NavbarIcon<P extends LinkIconProps> extends React.Component<P> {
+export class LinkIcon<P extends LinkIconProps> extends React.Component<P> {
     public render() {
         const { href, icon } = this.props;
 

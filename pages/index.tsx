@@ -3,6 +3,7 @@ import { Hero } from "~/components/Hero";
 import { Project, ProjectCard } from "~/components/Project";
 
 import Typewriter from "typewriter-effect";
+import { LinkButton, LinkIcon } from "~/components/Links";
 
 const words = ["Hello, I'm Duale", "Hi, I'm Wale", "Hello, I'm Duale Siad"];
 
@@ -22,6 +23,22 @@ export default function Home() {
                 <h2 className="mb-8 text-2xl font-semibold tracking-tight text-transparent bg-clip-text text-text-dawn dark:text-text">
                     I am a JVM programmer from Melbourne, Australia.
                 </h2>
+                <LinkIcon
+                    href="https://twitter.com/spellsaidwrong"
+                    icon={["fab", "twitter"]}
+                />
+                <LinkIcon
+                    href="https://github.com/wale"
+                    icon={["fab", "github"]}
+                />
+                <LinkIcon
+                    href="https://unsplash.com/spellsaidwrong"
+                    icon={["fab", "unsplash"]}
+                />
+                <LinkIcon
+                    href="mailto:me@wale.id.au"
+                    icon={["fas", "envelope"]}
+                />
             </Hero>
             <Project>
                 <h1 className="mb-8 text-2xl font-semibold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pine to-rose">
