@@ -6,7 +6,7 @@ export const Footer = () => {
                     © {new Date().getFullYear()} Duale Siad
                 </p>
                 <p className="text-sm text-muted-dawn dark:text-muted">
-                    Made with ❤️ and TypeScript + Tailwind CSS.
+                    Made with ❤️, TypeScript and Tailwind CSS.
                 </p>
             </div>
         </footer>
