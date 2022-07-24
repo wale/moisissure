@@ -12,3 +12,6 @@
 
 # Ignore CSS
 *.css
+
+# Ignore declarations
+*.d.ts

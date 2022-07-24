@@ -14,7 +14,7 @@ interface ProjectProps {
 
 export const ProjectCard = ({ name, description }: ProjectCardProps) => {
     return (
-        <figure className="md:flex bg-overlay-dawn rounded-xl md:rounded-md p-4 md:p-0 dark:bg-overlay">
+        <figure className="md:flex md:flex-grow bg-overlay-dawn rounded-xl md:rounded-md p-4 md:p-0 dark:bg-overlay">
             <div className="lg:pt-2 md:p-2 text-left md:text-left">
                 <figcaption className="font-bold text-xl md:text-lg">
                     <div className="text-iris-dawn dark:text-iris">{name}</div>

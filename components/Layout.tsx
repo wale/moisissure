@@ -1,35 +1,25 @@
-import { Navbar, NavbarIcon, NavbarLink } from "./Navbar";
+import { Footer } from "./Footer";
+import { Navbar } from "./Navbar";
+import { LinkButton } from "./Links";
 
 export const Layout = ({ children }: LayoutProps) => {
     return (
-        <main className="bg-base-dawn dark:bg-base">
-            <Navbar
-                left={
-                    <>
-                        <NavbarLink name="Blog" href="/blog" />
-                        <NavbarLink name="About" href="/about" />
-                        <NavbarLink name="Contact" href="/contact" />
-                    </>
-                }
-                right={
-                    <>
-                        <NavbarIcon
-                            href="https://twitter.com/spellsaidwrong"
-                            icon={["fab", "twitter"]}
-                        />
-                        <NavbarIcon
-                            href="https://github.com/wale"
-                            icon={["fab", "github"]}
-                        />
-                        <NavbarIcon
-                            href="https://unsplash.com/@spellsaidwrong"
-                            icon={["fab", "unsplash"]}
-                        />
-                    </>
-                }
-            />
-            {children}
-        </main>
+        <>
+            <main className="bg-base-dawn dark:bg-base">
+                <Navbar
+                    left={
+                        <>
+                            <LinkButton name="Blog" href="/blog" />
+                            <LinkButton name="About" href="/about" />
+                            <LinkButton name="Contact" href="/contact" />
+                        </>
+                    }
+                />
+                {children}
+            </main>
+            <Footer />
+            <div className="h-2 w-full bg-gradient-to-r from-pine-dawn dark:from-pine to-rose-dawn dark:to-rose"></div>
+        </>
     );
 };
 

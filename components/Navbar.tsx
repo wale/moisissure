@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 
 import { Transition } from "@headlessui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { LinkChild } from "./Links";
 
-export const Navbar = ({ left, right }: NavbarProps) => {
+export const Navbar = ({ left }: NavbarProps) => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <nav className="flex justify-between p-2 space-x-4">
+        <nav className="flex h-16 justify-between p-2 space-x-6 px-6 md:px-10">
+            <h1 className="font-sans font-bold text-2xl text-text-dawn dark:text-text inline-flex justify-center px-2 py-2">
+                /wɐːli:/
+            </h1>
             <div className="hidden md:block">
                 <div className="ml-4 flex items-baseline space-x-4">{left}</div>
             </div>
@@ -66,67 +68,19 @@ export const Navbar = ({ left, right }: NavbarProps) => {
             >
                 {(ref) => (
                     <div className="md:hidden" id="mobile-menu">
-                        <div
-                            ref={ref}
-                            className="px-1 pt-2 pb-3 space-y-1 sm:px-3"
-                        >
+                        <div ref={ref} className="px-1 py-2 space-y-1 sm:px-3">
                             {left}
                         </div>
                     </div>
                 )}
             </Transition>
-
-            <div className="flex pr-2">{right}</div>
         </nav>
     );
 };
 
-interface INavbarChild {
-    name?: string;
-    href: string;
-    alt?: string;
-}
-
-interface NavbarIconProps extends INavbarChild {
-    icon: IconProp;
-}
-
 interface NavbarProps {
-    left?:
+    left?: React.ReactElement<LinkChild> | React.ReactElement<LinkChild>[];
+    /* right?:
         | React.ReactElement<INavbarChild>
-        | React.ReactElement<INavbarChild>[];
-    right?:
-        | React.ReactElement<INavbarChild>
-        | React.ReactElement<INavbarChild>[];
-}
-
-export class NavbarLink<P extends INavbarChild> extends React.Component<P> {
-    public render() {
-        const { name, href } = this.props;
-        return (
-            <a
-                href={href}
-                className="font-medium px-2 py-2 text-text-dawn dark:text-text 
-                rounded-lg hover:bg-overlay-dawn dark:hover:bg-overlay hover:font-semibold"
-            >
-                {name}
-            </a>
-        );
-    }
-}
-
-export class NavbarIcon<P extends NavbarIconProps> extends React.Component<P> {
-    public render() {
-        const { href, icon } = this.props;
-
-        return (
-            <a
-                href={href}
-                className="font-medium px-2 py-2 text-text-dawn dark:text-text 
-                rounded-lg hover:bg-overlay-dawn dark:hover:bg-overlay hover:font-semibold"
-            >
-                <FontAwesomeIcon icon={icon} />
-            </a>
-        );
-    }
+        | React.ReactElement<INavbarChild>[]; */
 }
