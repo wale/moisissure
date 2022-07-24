@@ -15,4 +15,4 @@ This project utilises TypeScript, [Next.js](https://nextjs.org) and [Tailwind CS
 - [ ] Comment system
 
 ## License
-The source code for this site is licensed under [MIT](https://github.com/wale/moisissure/blob/main/LICENSE), whereas any future posts from the launch onwards are licensed under [Creative Commons Attribution-Non-Commercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC-BY-NC-SA) unless stated otherwise.
+The source code for this site is licensed under [MIT](https://github.com/wale/moisissure/blob/main/LICENSE), whereas any future posts from the launch onwards are licensed under [Creative Commons Attribution-Non-Commercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) (CC-BY-NC-SA) unless stated otherwise.
