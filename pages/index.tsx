@@ -35,6 +35,10 @@ export default function Home() {
                     name="prisma-client-kt"
                     description="prisma-client-kt is a Kotlin port of Prisma, a popular JavaScript ORM."
                 />
+                <ProjectCard
+                    name="jptv"
+                    description="A full-featured Java client for the Public Transport Victoria timetable API."
+                />
             </Project>
         </Layout>
     );
