@@ -12,3 +12,6 @@
 
 # Next build cache
 .next/
+
+# Satan's rubbish bin
+node_modules/
