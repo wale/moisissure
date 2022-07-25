@@ -1,9 +1,9 @@
 import { Layout } from "~/components/Layout";
 import { Hero } from "~/components/Hero";
 import { Project, ProjectCard } from "~/components/Project";
+import { LinkButton, LinkIcon } from "~/components/Links";
 
 import Typewriter from "typewriter-effect";
-import { LinkButton, LinkIcon } from "~/components/Links";
 
 const words = ["Hello, I'm Duale", "Hi, I'm Wale", "Hello, I'm Duale Siad"];
 
